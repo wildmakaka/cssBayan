@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>CSS Bayan</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-width: 480px;
+        min-height: 100vh;
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        transition: background-image 1s ease-in-out;
+      }
+
+      .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        min-height: 50px;
+      }
+
+      .hidecontent {
+        display: none;
+      }
+
+      #myaccordion label {
+        box-shadow: 0 0 20px #d4d4d4;
+        display: block;
+        padding: 8px 22px;
+        margin: 20px 0px 1px 0px;
+        cursor: pointer;
+        background: #5f75a4;
+        color: #fff;
+        transition: ease 0.5s;
+      }
+      #myaccordion label:hover {
+        background: #5f75ff;
+      }
+      .content {
+        box-shadow: 0 0 20px #d4d4d4;
+        background: #ffff;
+        padding: 10px 25px;
+        border: 1px solid #d4d4d4;
+        margin: -1 0 0 0;
+      }
+      #myaccordion input:checked + label + .content {
+        display: block;
+        webkit-animation: fadeIn 0.5s ease-out;
+        -moz-animation: fadeIn 0.5s ease-out;
+        -o-animation: fadeIn 0.5s ease-out;
+        animation: fadeIn 0.5s ease-out;
+      }
+      @-webkit-keyframes fadeIn {
+        0% {
+          display: none;
+          opacity: 0;
+        }
+        1% {
+          display: block;
+          opacity: 0;
+        }
+        100% {
+          display: block;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>CSS Bayan</h1>
+    </div>
+    <div id="myaccordion" class="container">
+      <input type="checkbox" id="accordion1" class="hidecontent" checked />
+      <label for="accordion1">Student 1</label>
+      <div class="content hidecontent">
+        <img src="./img/1.png" alt="Student 1" />
+        <p>Student 1</p>
+      </div>
+      <input type="checkbox" id="accordion2" class="hidecontent" />
+      <label for="accordion2">Трансформация викинга</label>
+      <div class="content hidecontent">
+        <img src="./img/2.jpg" alt="Трансформация викинга" />
+        <p>Трансформация викинга</p>
+      </div>
+      <input type="checkbox" id="accordion3" class="hidecontent" />
+      <label for="accordion3">Мамой клянусь</label>
+      <div class="content hidecontent">
+        <img src="./img/3.jpg" alt="Мамой клянусь" />
+        <p>Мамой клянусь</p>
+      </div>
+      <input type="checkbox" id="accordion4" class="hidecontent" />
+      <label for="accordion4">КЭП в интерфейсе</label>
+      <div class="content hidecontent">
+        <img src="./img/4.jpg" alt="КЭП в интерфейсе" />
+        <p>КЭП в интерфейсе</p>
+      </div>
+      <input type="checkbox" id="accordion5" class="hidecontent" />
+      <label for="accordion5">Оставайся невозмутимым это всех бесит</label>
+      <div class="content hidecontent">
+        <img src="./img/5.jpg" alt="Оставайся невозмутимым это всех бесит" />
+        <p>Оставайся невозмутимым это всех бесит</p>
+      </div>
+    </div>
+  </body>
+</html>
