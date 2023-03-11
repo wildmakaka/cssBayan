@@ -2,6 +2,30 @@
   <head>
     <title>CSS Bayan</title>
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-width: 480px;
+        min-height: 100vh;
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        transition: background-image 1s ease-in-out;
+      }
+
+      .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        min-height: 50px;
+      }
+
       .hidecontent {
         display: none;
       }
@@ -54,8 +78,8 @@
     <div>
       <h1>CSS Bayan</h1>
     </div>
-    <div id="myaccordion">
-      <input type="checkbox" id="accordion1" class="hidecontent" />
+    <div id="myaccordion" class="container">
+      <input type="checkbox" id="accordion1" class="hidecontent" checked />
       <label for="accordion1">Student 1</label>
       <div class="content hidecontent">
         <img src="./img/1.png" alt="Student 1" />
