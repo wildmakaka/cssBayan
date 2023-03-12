@@ -1,4 +1,4 @@
-# CSS Bayan
+# [RSS] CSS Bayan
 
 ### [Description](https://github.com/DrDiman/CSS-Bayan-task)
 
